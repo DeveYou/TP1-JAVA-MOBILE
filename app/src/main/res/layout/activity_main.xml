@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <!-- Header -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:background="@color/blue"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="Navigation"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- full name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nom &amp; Prénom"
+            android:textColor="@color/blue_sombre"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/full_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/gray"
+            android:hint="Nom complete"
+            android:inputType="text" />
+
+
+        <!-- email -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textColor="@color/blue_sombre"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="@color/gray"
+            android:layout_marginBottom="10dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+
+
+        <!-- phone -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone"
+            android:textColor="@color/blue_sombre"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="@color/gray"
+            android:layout_marginBottom="10dp"
+            android:hint="Phone"
+            android:inputType="phone" />
+
+
+        <!-- address -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adresse"
+            android:textColor="@color/blue_sombre"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="@color/gray"
+            android:layout_marginBottom="10dp"
+            android:hint="Adresse"
+            android:inputType="text" />
+
+
+        <!-- ville -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/blue_sombre"
+            android:text="Ville" />
+
+        <Spinner
+            android:id="@+id/city_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="@color/gray"
+            android:popupBackground="@color/blue_light"
+            android:layout_marginBottom="10dp"
+            />
+
+        <!-- gender -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/blue_sombre"
+            android:text="Genre" />
+
+        <RadioGroup
+            android:id="@+id/gender"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_marginBottom="25dp">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Homme"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Femme"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/send_btn"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/blue"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="Envoyer" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
